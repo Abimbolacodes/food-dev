@@ -5,7 +5,7 @@ import Cart from './Pages/Cart/Cart'
 import PlaceOrder from './Pages/PlaceOrder/PlaceOrder'
 import Footer from './Components/Footer/Footer'
 import { useState } from 'react'
-import LoginPopup from './Components/loginPopup/loginPopUp'
+import LoginPopup from './Components/loginPopup/LoginPopup'
 import Home from './Pages/Home/home'
 
 const App = () => {
