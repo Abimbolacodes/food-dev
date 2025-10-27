@@ -3,11 +3,10 @@ import Navbar from './Components/Navbar/Navbar'
 import { Route, Routes } from 'react-router-dom'  
 import Cart from './Pages/Cart/Cart'
 import PlaceOrder from './Pages/PlaceOrder/PlaceOrder'
-import Footer from './Components/Footer/footer'
+import Footer from './Components/Footer/Footer'
 import { useState } from 'react'
-import LoginPopup from './Components/loginPopup/loginPopUp'
-import Home from './Pages/Home/home'
-import Dashboard from './admin/Dashboard'
+import LoginPopup from './Components/loginPopup/LoginPopup'
+import Home from './Pages/Home/Home'
 
 const App = () => {
 
