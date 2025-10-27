@@ -7,25 +7,30 @@ import Footer from './Components/Footer/footer'
 import { useState } from 'react'
 import LoginPopup from './Components/loginPopup/loginPopUp'
 import Home from './Pages/Home/home'
+import Dashboard from './admin/Dashboard'
 
 const App = () => {
 
   const [showlogin, setShowlogin] = useState (false)
   return (
     <>
-    {showlogin?<LoginPopup setShowlogin={setShowlogin}/>:<></>}
-    <div className='app'>
-      < Navbar setShowlogin = {setShowlogin}/>
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/cart' element={<Cart />} />
-        <Route path='/order' element={<PlaceOrder />} />
-      </Routes>
-    </div>
-
-    <Footer />
-    
-    
+    <Routes>
+      <Route path='/admin' element={<Dashboard />} />
+      <Route path='/*' element={
+        <>
+          {showlogin?<LoginPopup setShowlogin={setShowlogin}/>:<></>}
+          <div className='app'>
+            < Navbar setShowlogin = {setShowlogin}/>
+            <Routes>
+              <Route path='/' element={<Home />} />
+              <Route path='/cart' element={<Cart />} />
+              <Route path='/order' element={<PlaceOrder />} />
+            </Routes>
+          </div>
+          <Footer />
+        </>
+      } />
+    </Routes>
     </>
    
   )
