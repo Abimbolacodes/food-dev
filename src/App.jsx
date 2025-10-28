@@ -6,7 +6,7 @@ import PlaceOrder from './Pages/PlaceOrder/PlaceOrder'
 import Footer from './Components/Footer/Footer'
 import { useState } from 'react'
 import LoginPopup from './Components/loginPopup/loginPopUp'
-import Home from './Pages/Home/home'
+import Home from './Pages/Home/Home'
 import Dashboard from './admin/Dashboard'
 
 const App = () => {
